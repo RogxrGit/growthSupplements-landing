@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatina Growth | Suplemento Essencial para Atletas</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1421516526066876');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1421516526066876&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        /* Reset e estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        :root {
+            --netflix-red: #e50914;
+            --netflix-dark: #141414;
+            --netflix-gray: #2f2f2f;
+            --netflix-light: #f5f5f1;
+            --accent: #00b2ff;
+        }
+        
+        body {
+            background-color: var(--netflix-dark);
+            color: var(--netflix-light);
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header estilo Netflix */
+        header {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            transition: background-color 0.3s;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--netflix-red);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--netflix-light);
+        }
+        
+        .cta-button {
+            background-color: var(--netflix-red);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        
+        .cta-button:hover {
+            background-color: #f40612;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('./src/assets/bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 650px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+        
+        .price span {
+            color: #b3b3b3;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+        
+        .main-button {
+            background-color: var(--netflix-red);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .main-button:hover {
+            background-color: #f40612;
+            transform: scale(1.05);
+        }
+        
+        .main-button i {
+            margin-left: 8px;
+        }
+        
+        /* Checklist Section */
+        .checklist-section {
+            padding: 60px 0;
+            background-color: var(--netflix-gray);
+        }
+        
+        .checklist-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .checklist {
+            list-style: none;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .checklist-icon {
+            color: var(--accent);
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: var(--netflix-gray);
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Product Showcase */
+        .product-showcase {
+            padding: 60px 0;
+            background-color: var(--netflix-gray);
+            text-align: center;
+        }
+        
+        .product-image {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1534367507877-0edd93bd013b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 40px 0;
+            text-align: center;
+            color: #757575;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #757575;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .checklist-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">CREATINA<span>GROWTH</span></a>
+            <a href="https://mercadolivre.com/sec/2A2rJKW" class="cta-button" id="header-buy-button">COMPRAR AGORA</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>MAXIMIZE SEUS RESULTADOS COM CREATINA PURA</h1>
+                <p>A Creatina Monohidratada Growth Supplements é o suplemento ideal para atletas que buscam performance máxima e ganhos reais.</p>
+                <div class="price">
+                    <!-- <span>R$ 69,90</span> R$ 49,90 -->
+                </div>
+                <a href="https://mercadolivre.com/sec/2A2rJKW" class="main-button" id="hero-buy-button">
+                    COMPRAR AGORA <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="checklist-section">
+        <div class="container checklist-container">
+            <h2 class="section-title">BENEFÍCIOS DA CREATINA GROWTH</h2>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <i class="fas fa-check-circle checklist-icon"></i>
+                    <span>Acelera a recuperação muscular</span>
+                </li>
+                <li class="checklist-item">
+                    <i class="fas fa-check-circle checklist-icon"></i>
+                    <span>Aumento de força e volume muscular</span>
+                </li>
+                <li class="checklist-item">
+                    <i class="fas fa-check-circle checklist-icon"></i>
+                    <span>Indicado para atletas de diversas modalidades</span>
+                </li>
+                <li class="checklist-item">
+                    <i class="fas fa-check-circle checklist-icon"></i>
+                    <span>100% pura e sem aditivos</span>
+                </li>
+                <li class="checklist-item">
+                    <i class="fas fa-check-circle checklist-icon"></i>
+                    <span>Aumenta a produção de energia durante os treinos</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">POR QUE ESCOLHER A CREATINA GROWTH?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="feature-title">Alta Pureza</h3>
+                    <p>Processo de fabricação avançado que garante um produto com pureza superior a 99,9%, livre de contaminantes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Mais Energia</h3>
+                    <p>Aumenta significativamente os níveis de ATP, fornecendo energia rápida para treinos intensos e explosivos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="feature-title">Ganhos Reais</h3>
+                    <p>Estudos comprovam que a creatina monohidratada é o suplemento mais eficaz para ganho de força e massa muscular.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <h2 class="section-title">CREATINA MONOHIDRATADA 250G</h2>
+            <img src="./src/assets/creatina.jpg" alt="Creatina Monohidratada Growth Supplements" class="product-image">
+            <p>Embalagem de 250g - Suficiente para 2-3 meses de uso</p>
+            <a href="https://mercadolivre.com/sec/2A2rJKW" class="main-button" id="product-buy-button" style="margin-top: 20px;">
+                COMPRAR AGORA <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>NÃO PERCA ESTA OPORTUNIDADE</h2>
+            <p>Compre agora a Creatina Growth Supplements com preço especial e frete grátis para todo Brasil.</p>
+            <a href="https://mercadolivre.com/sec/2A2rJKW" class="main-button" id="final-buy-button">
+                GARANTIR MEU DESCONTO <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+            <p>Este site é de um afiliado e não faz parte do Mercado Livre ou Marcas. Os preços e condições podem ser alterados sem aviso prévio.</p>
+            <p style="margin-top: 10px;">&copy; 2023 CreatinaGrowth. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Efeito de mudança de cor do header ao scrollar
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
+            } else {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+            }
+        });
+        
+        // Configuração do Pixel Facebook + Animações
+        document.addEventListener('DOMContentLoaded', function() {
+            // Rastrear cliques nos botões de compra
+            const buyButtons = [
+                document.getElementById('header-buy-button'),
+                document.getElementById('hero-buy-button'),
+                document.getElementById('product-buy-button'),
+                document.getElementById('final-buy-button')
+            ];
+            
+            buyButtons.forEach(button => {
+                if (button) {
+                    button.addEventListener('click', function() {
+                        // Eventos do Facebook Pixel
+                        fbq('track', 'InitiateCheckout');
+                        fbq('track', 'AddToCart');
+                        fbq('track', 'Lead');
+                        
+                        console.log('Pixel Facebook: Compra rastreada - ' + this.id);
+                    });
+                }
+            });
+            
+            // Rastrear tempo na página
+            setTimeout(() => {
+                fbq('track', 'ViewContent');
+            }, 3000);
+            
+            // Animação suave para os cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            
+            featureCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+            });
+            
+            setTimeout(() => {
+                featureCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.transition = 'opacity 0.5s, transform 0.5s';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }, 500);
+        });
+        
+        // Rastrear scroll (engajamento)
+        window.addEventListener('scroll', function() {
+            const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            
+            if (scrollPercentage > 50) {
+                fbq('track', 'CompleteRegistration');
+            }
+        });
+    </script>
+</body>
+</html>
